@@ -17,7 +17,7 @@ const app = express();
 // CORS config — uses CLIENT_URL from .env
 const allowedOrigins = process.env.CLIENT_URL
   ? process.env.CLIENT_URL.split(",").map((url) => url.trim())
-  : ["http://localhost:5173"];
+  : ["https://chirala-allround-services.vercel.app,https://chirala-allround-services-nq01a9bpw-srikanth3222s-projects.vercel.app,http://localhost:5173"];
 
 app.use(
   cors({
